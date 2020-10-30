@@ -1,0 +1,371 @@
+【html】
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel=stylesheet type="text/css" href="StyleSheet2.css">
+</head>
+<body>
+    
+  <div class="CVWhole"> 
+  
+  <div class="headCV">
+     <div class="smallCircle0"></div>
+    <h3 class="name">Cynthia Lo<br> 
+      <h3 class="title">Software Engineer</h3>
+    </h3>
+ <h5 class="location">Hsinchu, TW</h5> <br>
+ <h5 class ="email">avg54362333@gmail.com</h5><br>
+    <h5 class="mobile"> (+886)955-358-433</h5><br>
+ <h5 class="website">http://avg54362333.wixsite.com/home/</h5>
+  </div>
+  
+  <div class="education">
+  <h4>EDUCATION</h4>
+    <div class="smallCircle1"></div>
+    <div class="smallRec1"></div>
+    <div class="smallCircle1"></div>
+    <h5 class="UniName"> The University of Sydney</h5>
+     <div class="sydneylogo"></div>
+    <h6 class="department">Master of Information Technology and Master of Information Technology Management, <br>
+2016-2018</h6>
+    <p class="uniDescription">1. Psychology Society Member <br>2. Coordinator of 3D Printing Club</p>
+   <div class="smallCircle2"></div>
+  <h5 class="UniName"> National Center University</h5>
+    <div class="nculogo"></div>
+  <h6 class="department">Master of Business Administrator (MBA), Information Management, 2013-2015</h6>
+    <p class="uniDescription">1. Event General Coordinator of IM Seminar <br>2. Student Association of Information Management Department</p>
+ </div>
+  
+  <div class= "workExperience">
+    <h4>Work Experience</h4>
+    <div class="smallRec2"></div>
+    <div class="smallCircle3"></div>
+    <h5 class="UniName">TSMC</h5>
+    <div class="tsmclogo"></div>
+    <h6 class="department">IT Engineer,Oct 2019-Feb 2020</h6>
+    <p class="uniDescription">1. Helped in improving current e-platform regarding its performance and efficiency <br>2. Designed new internal system interface</p>
+    <div class="smallCircle4"></div>
+    <h5 class="UniName">ACE Biotek</h5>
+    <div class="acebioteklogo"></div>
+    <h6 class="department">Software Engineer,May 2018-Oct 2019</h6>
+    <p class="uniDescription">1. Helped in managing the project scope, schedule, and budget control <br>2. Visualized clients' requirements, analyzing user needs, and definding the key features of this service. <br>
+      3. Made UI wireframes, UX frameworks, and prototypes for multiple devices, including iOS, Andriod, and web. <br> 4. Lead iOS, Andriod, web developers to create the app and successfully delivered to clients. <br> 5. Built webs for the company from 0 to 1, testing and maintaining the applications for the webs. <br> 5. Integrated graphics, audio, and vedio into the websites. <br> 6. Optimized the website by implementing SEO, and monitoring website traffic.
+ </p>
+  </div>
+  
+  <div class= "certificate">
+    <h4>Certificate</h4>
+    <p class="uniDescription">
+      Oracle Certificated PRofessional, JAVA SE6 Programmer (Issued date: Feb 2017)<br>
+      Interational English Certificate - IELTS 6.5 (Issued date: August 2015) <br>
+      ERP Planner Certificate (Issued date: March 2014)
+    </p>
+  </div>
+  
+  </div>
+</body>
+</html>
+
+=======================================================================
+【CSS】
+/* whole background*/
+*{
+  font-family: Trebuchet MS;
+  position: relative;
+  letter-spacing: 1px;
+  color: #666;
+  overflow: hidden; /*所有超出頁面的東西都會消失*/
+  border-radius: 5px;
+}
+
+/* Both html and body*/
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+ /*  whole body of CV*/
+body{
+  background-color: #DCDCDC;
+/*   border-top: solid 20px #f24;
+  border-bottom: solid 20px #f24; */
+  border-radius: 0px;
+  box-sizing: boder-box;
+  overflow-y: scroll;
+}
+
+/* Profile picture setting*/
+.profilePicture{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: 730px;
+  top: 150px;
+  border: 3px solid #f24;
+  border-radius: 100px;
+  background-image: url('https://drive.google.com/file/d/1gA-Tff8TmM05kivdYs4thcpjlw3DHL-y/view?usp=sharing');
+  background-position: center;
+  background-size: contain;
+}
+
+/* Candidate Name*/
+.name{
+  color: #1E90FF;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 270px;
+}
+
+/* Candidate Title*/
+.title{
+  color: #696969;
+  font-weight: 300;
+  font-size: 14x;
+  margin-top:-20px;
+  margin-left: 270px;
+}
+
+/* Home Location */
+.location{
+  color: #A9A9A9;
+  margin-top:-10px;
+  margin-left: 270px;
+  font-weight: 200;
+}
+
+/* email */
+.email{
+  color: #20B2AA;
+  margin-top:-30px;
+  margin-left: 270px;
+  font-weight: 200;
+}
+
+/* mobile number*/
+.mobile{
+  color: 	#20B2AA;
+  margin-top:-40px;
+  margin-left: 270px;
+  font-weight: 200;
+}
+
+/* candidate reference website */
+.website{
+  color: 	#007FFF;
+  margin-top:-40px;
+  margin-left: 270px;
+  font-weight: 200;
+}
+
+/* education background*/
+.education h4{
+  color: #6F00D2;
+  font-weight: 700;
+  font-size: 20px;
+ }
+
+ /* work experience*/
+.workExperience h4{
+  color: #0000E3;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* certificate*/
+.certificate h4{
+  color: 	#D9006C;
+ font-weight: 700;
+  font-size: 20px;
+}
+
+/* .mark{
+  font-size: 300px;
+  position: absolute;
+  bottom: 100px;
+  font-weight:100;
+  color: rgba(0,0,0,0.035);
+} */
+
+/* whole CV setting in terms of background */
+.CVWhole{
+  padding:0px;
+  margin:0px;
+  position: static;
+  border-radius: 10px;
+  width:850px;
+  height: 1200px;
+  font-weight:100px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #FCFCFC;
+  border: solid 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 20px 15px      rgba(0,0,0,0.2); /*邊框模糊化&&有陰影*/
+}
+
+/* university name setting*/
+.UniName{
+  color: #3C3C3C;
+  font-size: 16px;
+  font-weight: 900;
+  margin-left: 50px;
+}
+
+/* graduated from which department*/
+.department{
+ color: #4F4F4F;
+  font-size: 13px;
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+/* during uni period what are the things have done*/
+.uniDescription{
+  color: #8E8E8E;
+  font-size: 13px;
+  line-height: 2;
+  margin-top: -10px;
+  font-weight: 100;
+  margin-left: 50px;
+}
+
+/* profile pic */
+.smallCircle0{
+  width: 160px;
+  height:160px;
+  right: 640px;
+  top: 30px;
+  position: absolute;
+  border: solid 1px #DCB5FF;
+  background-color: #E6CAFF;
+  border-radius: 100px;
+background-image: url('https://gravatar.com/avatar/7bc58e4f8b7eb3f10760d8526d3ba34b?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&format=auto&height=80&version=0&width=80');background-position: center;
+  background-size: contain;
+}
+
+/* picture to put of Sydney logo*/
+.smallCircle1{
+  width: 15px;
+  height:15px;
+  right: 820px;
+  position: absolute;
+  border: solid 1px #E6CAFF;
+  background-color: #E6CAFF;
+  border-radius: 100px;
+}
+/* picture to put of NCU logo*/
+.smallCircle2{
+  width: 15px;
+  height:15px;
+  right: 820px;
+  top: 215px;
+  position: absolute;
+  border: solid 1px #E6CAFF;
+  background-color: #E6CAFF;
+  border-radius: 100px;
+}
+
+/* picture to put of TSMC logo*/
+.smallCircle3{
+  width: 15px;
+  height:15px;
+  right: 820px;
+  top: 80px;
+  position: absolute;
+  border: solid 1px 	#ACD6FF;
+  background-color: 	#ACD6FF;
+  border-radius: 100px;
+}
+
+/* picture to put of ACE Biotek logo */
+.smallCircle4{
+  width: 15px;
+  height:15px;
+  right: 820px;
+  top: 220px;
+  position: absolute;
+  border: solid 1px 	#ACD6FF;
+  background-color: 	#ACD6FF;
+  border-radius: 100px;
+}
+
+/* the straight line in the uni study period*/
+.smallRec1{
+  width:2px;
+  height:154px;
+  border: solid 1px #E6CAFF;
+  background-color: #E6CAFF;
+  position: absolute;
+  margin-left: 19.5px;
+}
+
+/* the straight line in the working experience period*/
+.smallRec2{
+  width:2px;
+  height:133px;
+  border: solid 1px #ACD6FF;
+  background-color: #ACD6FF;
+  position: absolute;
+  margin-left: 19.5px;
+  margin-top: 10px;
+}
+
+.sydneylogo{
+  width: 80px;
+  height: 80px;
+  right: 40px;
+  margin-top: -40px;
+  position: absolute;
+  border: solid 1px 	#FFD2D2;
+  background-color: 	#000;
+  border-radius: 100px;
+  background-image: url('https://ih1.redbubble.net/image.204377643.7883/st,small,507x507-pad,600x600,f8f8f8.u7.jpg');
+  background-position: center;
+  background-size: contain;
+}
+
+.nculogo{
+  width: 80px;
+  height: 80px;
+  right: 40px;
+  margin-top: -40px;
+  position: absolute;
+  border: solid 1px 	#D2E9FF;
+  background-color: 	#000;
+  border-radius: 100px;
+  background-image: url('https://www.ncu.edu.tw/assets/thumbs/pic/df1dfaf0f9e30b8cc39505e1a5a63254.png');
+  background-position: center;
+  background-size: contain;
+}
+.tsmclogo{
+  width: 80px;
+  height:80px;
+  right: 40px;
+  margin-top: -40px;
+  position: absolute;
+  border: solid 1px 	#D0D0D0;
+  background-color: 	#000;
+  border-radius: 100px;
+  background-image: url('https://logodix.com/logo/86465.png');
+   background-position: center;
+  background-size: contain;
+}
+.acebioteklogo{
+  width: 80px;
+  height:80px;
+  right: 40px;
+  margin-top: -40px;
+  position: absolute;
+  border: solid 1px 	#ACD6FF;
+  background-color: 	#000;
+  border-radius: 100px;
+  background-image: url('data:image/jpeg;base64,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hdcI4hbxKbm7nVHk6ms3V346bTltUYJKcPDQ5hkieH5b3FwWnzRvUlTTzV/T6gKku+0xGBreUshkeewkIwsfQXVrQ4Q4ysL56gtymaW12g8RG0bm3959qDbYloZh1TWx109IySojtleS+xLfRLm3yuI9oQctLNFKPFYWQ1bHObG8SMLHFjw7eCL8xCD6v0WoHU8FM6jhdDTOa6CNzAWxubyjn4778eVB8/8ApOh8YnEjTtdVFrWiQlxDcoyhzW8AcoAvZBrYdXeHNxWTFCx8k8j9oGvcHQxy9IxtuO6+8mx4WQdyv0Iw6oxBmIy0zX1DA0BxLshLfRc5nBxA5bcg5kHPEtDMNqa2OumpGSVEdrPJfYlvolzb5XEe0INrV4fDM+J8sTHugftIXOAJjksRmbzGxQaym0SoYsRlxJsANVMAHSOJdl3BpLBwaSBvKD6aX05lw6rY1pc4wvLWgEkuAuABynctd2N1EwmcPuxayaKp9JazVnDJHhkbJGPjc18nmvaWOsXE3setfGPTtpiEvjVyi5lTVTOsTolq3qgQEBAQEBAQEGEYEiWZZQEBAQEBAQEBAQEBBgoCDKAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg/9k=');
+  background-position: center;
+  background-size: contain;
+}
