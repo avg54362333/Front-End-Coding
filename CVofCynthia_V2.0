@@ -1,0 +1,257 @@
+【HTML】
+<div class="cv">
+  <div class="top">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <div class="tleft">
+      <h1>CYNTHIA</h1>
+      <h6>1990.01.22</h6>
+    </div>
+    <div class="tright">
+      <p> A creative front-end engineer and designer, working in the front-end industry from the past two years.</p>
+      <p>Always devoted myself into new and cool things, especially like to challenge I myself in the design of user interface and user research. And always eager to design something BIG.<p/>        
+    </div>
+  </div>
+  
+  <div class="profile">
+    <div class="crop">
+      <img src="https://images.iphonephotographyschool.com/10819/1120/iPhone-Photos-Black-And-White-12.jpg" alt="sample pic">
+    </div>
+  </div>  
+  <div class="bottom">
+    <div class="bottoml">
+      <h4>CONTACT</h4>
+      <p>Software Engineer<br>
+        Front-end Designer<br>
+        </p>
+      <h4>SOCIAL</h4>
+        <div class="socialp">
+          <p>(+886) 955358433</p>
+          <p>avg54362333@gmail.com</p>
+          <p> avg54362333</p>
+        </div>
+      
+      <div class="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <div class="icon-bar">
+        <div class="phone"><a href="#" class="phone"><i class="fa fa-phone-square" style="font-size: 1.1em;"></i></a></div> 
+        <div class="email"><a href="#" class="email"><i class="fa fa-envelope-square" style="font-size: 1.1em;"></i></a></div>  
+        <div class="git"><a href="#" class="git"><i class="fa fa-git-square" style="font-size: 1.1em;"></i></a></div> 
+      </div>
+    </div>
+      
+      <h4>CERTIFICATE</h4>
+      <p>Oracle JAVA Professional <br>International English certificate <br>ERP planner certificate</p>
+      <h4>SKILLS</h4>
+      <p>Html5, Css3, Javascript <br>Adobe XD, Figma, Sketch <br></p>
+    </div>
+    
+    <div class="bottomc">
+      <h4>EXPERIENCE</h4>
+      <h5>IT Engineer</h5>
+      <h6>TSMC- Hsinchu City<br><span>2020-2010</span></h6>
+      <p>Helped in improving current e-platform regarding its performance and efficiency.</p>
+      <h5>Software Engineer</h5>
+      <h6>Ace Biotek- Hsinchu County<br><span>2018-2019</span></h6>
+      <p>Lead iOS, Android, web developers to create the app and successfully delivered to clients. Excellent in UI wireframe and UX framework.<br>
+        Optimized the website by implementing SEO, and monitoring website traffic.<br></p>
+</div>
+    
+    <div class="bottomr">
+      <h4>EDUCATION</h4>
+      <h5>Master Degree <br>
+        Master of IT & ITM </h5>
+      <h6>University of Sydney<br><span>2016-2018</span></h6>
+      <h5>Master Degree <br> Master of Information</h5>
+      <h6>National Central University<br><span>2013-2015</span></h6>
+      <h5>Bachelor Degree <br> Bachelor of Information</h5>
+      <h6>National Central University<br><span>2009-2013</span></h6>
+    </div>
+
+    <div class="bottomra">
+      <h4>CLUB</h4>
+      <h5>Psychology Society  Member</h5>
+      <h6>University of Syndey<br><span>2016-2018</span></h6>
+      <h5>Coordinator of 3D Printing Club</h5>
+      <h6>University of Syndey<br><span>2016-2018</span></h6>
+      <h5>Student Association of IM Department</h5>
+      <h6>National Central University<br><span>2013-2015</span></h6>
+    </div>
+  </div>  
+</div>
+
+【CSS】
+*{
+/*   border: solid 1px black; */
+  vertical-align: top;
+  position: relative;
+}
+
+html, body{
+  width: 100%; height: 1000px;
+  margin: 0px; padding: 0px;
+}
+body{
+  background-color: #262626;
+  box-sizing: border-box;
+}
+.cv{
+/*   border: solid 1px black; */
+  width: 800px; height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  
+  box-shadow: 0px 0px 20px 
+} 
+.top{
+  height:400px;
+  background-color: #1B1D26;
+}
+.bottom{
+  height:500px;
+  background-color: #E6E6E6;
+  z-index: -1;
+}
+.tleft, .tright{
+  display: inline-block;
+  box-sizing: border-box;
+}
+.tleft{
+  font-size: 38px;
+  color: #D9D9D9;
+  transform: rotate(-90deg);
+  width: 400px; height: 250px;
+  margin-left: -60px;
+  margin-top: 50px;
+  letter-spacing: 0.15em; 
+}
+.tleft h1{
+  font-family: Roboto Condensed;
+  text-align: left;
+}
+.tleft h6{
+  font-size: 18px;
+  font-family: Roboto Condensed;
+  margin-top: -67px;
+  text-align: left;
+}
+.tright{
+  font-size: 12px;
+  color: #D9D9D9;
+  font-family: Arial;
+  width: 350px;
+  margin-top: -250px;
+  margin-left: 270px;
+  opacity: 60%;
+}
+.profile{
+  position: absolute;
+  width: 350px;
+  height: 380px;
+  overflow: hidden;
+  margin-left: 270px;
+  margin-top: -240px;
+}
+.crop img{
+  width: 400px;
+  height: 600px;
+  margin-top: -80px;
+}
+.bottoml, .bottomr{
+  display: inline-block;
+}
+.bottoml{
+  font-family: Roboto Condensed;
+  height:400px; width: 200px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+.bottoml p{
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 60%;
+}
+.socialp p{
+  text-align: left;
+  margin-left: 1.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+}
+.icon-bar {
+  box-sizing: border-box;
+  position: absolute;
+  top: -75px;
+  
+}
+.phone, .email, .git{
+  color: black;
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+.bottomc{
+  font-family: Roboto Condensed;
+  width: 150px; height: 300px;
+  margin-left: 270px;
+  margin-top: -280px;
+}
+.bottomc h5{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 12px;
+}
+.bottomc h6{
+  font-family: Arial;
+  font-size: 11px;
+  margin-top:-2em;
+  opacity: 60%;
+}
+.bottomc p{
+  font-family: Arial;
+  font-size: 11px;
+  margin-top: -1.5em;
+  opacity: 60%;
+}
+.bottomr{
+  font-family: Roboto Condensed;
+  width: 150px; height: 250px;
+  margin-left: 440px;
+  margin-top: -321px;
+}
+.bottomr h5{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.bottomr h6{
+  font-family: Arial;
+  font-size: 11px;
+  margin-top:-2em;
+  opacity: 60%;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.bottomra{
+  font-family: Roboto Condensed;
+  width: 150px; height: 250px;
+  margin-left: 600px;
+  margin-top: -339px;
+}
+.bottomra h5{
+ font-family: Arial;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.bottomra h6{
+   font-family: Arial;
+  font-size: 11px;
+  margin-top:-2em;
+  opacity: 60%;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
