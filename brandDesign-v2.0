@@ -1,0 +1,202 @@
+【html】
+<div class="brandAD">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel=stylesheet type="text/css" href="styleSheet.css">
+    <title>品牌視覺指導</title>
+    <header>
+        <div class="header"></div>
+        <div class="header1"></div>
+        <div class="header2"></div>
+        <div class="header3"></div>
+    </header>
+
+    <body>
+        <h1>品牌網頁視覺引導-40PX </h1>
+        <h4>English Style Guideline for h1 Title</h4>
+
+        <h2>品牌網頁視覺引導-30PX</h2>
+        <h5>English Style Guideline for h2 Title</h5>
+        <div class="reg "></div>
+
+        <h3>品牌網頁視覺引導-20PX</h3>
+        <h6>English Style Guideline for h3 Title</h6>
+        <hr>
+        <div class="COLORS ">
+            <h3 class="VI">VI Colors</h3>
+
+            <div class="color-text">
+                <div id="color1">#FFBC0A</div>
+                <div id="color2">#FF359A</div>
+                <div id="color3">#46A3FF</div>
+            </div>
+
+            <div class="color-box">
+                <div id="color1c"></div>
+                <div id="color2c"></div>
+                <div id="color3c"></div>
+            </div>
+        </div>
+
+        <div class="BUTTONS ">
+            <h3 class="btn">BUTTON EXAMPLES</h3>
+            <div class="btns">
+                <div id="btn1">按鈕範例</div>
+                <div id="btn2">按鈕範例</div>
+                <div id="btn3">按鈕範例</div>
+            </div>
+        </div>
+    </body>
+</div>
+=================================================================================================================================
+【CSS】
+* {
+    background-color: #272727;
+    font-family: 微軟正黑體;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.header {
+    width: 400px;
+    height: 10px;
+    background-color: #FF359A;
+    margin-left: 5px;
+}
+
+.header1 {
+    width: 400px;
+    height: 10px;
+    background-color: #FFC1E0;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.header2 {
+    width: 400px;
+    height: 10px;
+    background-color: #CA8EFF;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.header3 {
+    width: 400px;
+    height: 10px;
+    background-color: #FF79BC;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.squre-yellow .square-black .square-white {
+    display: inline-block;
+}
+
+.COLORS {
+    margin-left: 5px;
+}
+
+.VI {
+    color: #FFFF6F;
+}
+
+.BUTTONS {
+    margin-left: 5px;
+}
+
+.btn {
+    color: #46A3FF;
+}
+
+.reg {
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background-color: #C07AB8;
+    top: 50px;
+}
+
+h1 {
+    color: #BE77FF;
+}
+
+#color1,
+#color2,
+#color3 {
+    color: #eee;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+#color1c,
+#color2c,
+#color3c {
+    color: #eee;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-left: 0px;
+    margin-right: 100px;
+    position: relative;
+    right: -100px;
+    top: -30px;
+    border-radius: 5px;
+}
+
+#color1c {
+    background-color: #FFBC0A;
+}
+
+#color2c {
+    background-color: #FF359A;
+}
+
+#color3c {
+    background-color: #46A3FF;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 100px;
+    position: relative;
+    right: 0px;
+    top: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    height: 30px;
+    width: 100px;
+    color: #eee;
+    text-align: center;
+    line-height: 28px;
+}
+
+#btn1 {
+    background-color: #4B0091
+}
+
+#btn1:hover {
+    background-color: #FFBC0A
+}
+
+#btn2 {
+    background-color: #750075
+}
+
+#btn2:hover {
+    background-color: #FF359A
+}
+
+#btn3 {
+    background-color: #003060
+}
+
+#btn3:hover {
+    background-color: #46A3FF
+}
