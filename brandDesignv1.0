@@ -1,0 +1,204 @@
+【html-jade】
+.header
+  img.head(src="https://taiwanbar.cc/img/index/banner.png", alt="")
+
+.content.content_bk
+  .max_width
+    img.guide(src="https://taiwanbar.cc/img/logo.png", alt="")
+    h1 品牌網頁視覺引導 40px
+    h1.eng English style guideline for h1 Title
+    h2 品牌網頁視覺引導 30px
+    h2.eng English style guideline for h2 Title
+    h3 品牌網頁視覺引導 20px
+    h3.eng English style guideline for h3 Title
+    br
+    hr
+
+    p VI Colors
+    .color_chip
+      .color_tag #FFBC0A
+      .color_block.color_block_yl
+    .color_chip
+      .color_tag #000000
+      .color_block.color_block_bk
+    .color_chip
+      .color_tag #FFFFFF
+      .color_block.color_block_wt
+
+    p Button EX.
+    .button.button_yl 按鈕範例
+    .button.button_bk 按鈕範例
+    .button.button_wt 按鈕範例
+
+.content.content_wt
+  .max_width
+    img.guide(src="https://taiwanbar.cc/img/logo.png", alt="")
+    h1 品牌網頁視覺引導 40px
+    h1.eng English style guideline for h1 Title
+    h2 品牌網頁視覺引導 30px
+    h2.eng English style guideline for h2 Title
+    h3 品牌網頁視覺引導 20px
+    h3.eng English style guideline for h3 Title
+    br
+    hr
+
+    p VI Colors
+    .color_chip
+      .color_tag #FFBC0A
+      .color_block.color_block_yl
+    .color_chip
+      .color_tag #000000
+      .color_block.color_block_bk
+    .color_chip
+      .color_tag #FFFFFF
+      .color_block.color_block_wt
+
+    p Button EX.
+    .button.button_yl 按鈕範例
+    .button.button_bk 按鈕範例
+    .button.button_wt 按鈕範例
+
+
+.content.content_yl
+  .max_width
+    img.guide(src="https://taiwanbar.cc/img/logo.png", alt="")
+    h1 品牌網頁視覺引導 40px
+    h1.eng English style guideline for h1 Title
+    h2 品牌網頁視覺引導 30px
+    h2.eng English style guideline for h2 Title
+    h3 品牌網頁視覺引導 20px
+    h3.eng English style guideline for h3 Title
+    br
+    hr
+
+    p VI Colors
+    .color_chip
+      .color_tag #FFBC0A
+      .color_block.color_block_yl
+    .color_chip
+      .color_tag #000000
+      .color_block.color_block_bk
+    .color_chip
+      .color_tag #FFFFFF
+      .color_block.color_block_wt
+
+    p Button EX.
+    .button.button_yl 按鈕範例
+    .button.button_bk 按鈕範例
+    .button.button_wt 按鈕範例
+
+【sass】
+$color_wt: #FFF
+$color_bk: #000
+$color_yl: #FFBC0A
+$font_size: 1px
+$max_width: 580px
+@mixin size($w,$h)
+  width: $w
+  height: $h
+img.head
+  width: 100%
+body,html
+  padding: 0px
+  margin: 0px
+  background-color: $color_bk
+* 
+  position: relative
+  font-family: Ubuntu, Kosugi Maru
+  font-size: $font_size*16
+  // border: solid 1px
+
+.max_width
+  max-width: $max_width
+  margin-left: auto
+  margin-right: auto
+
+.content
+  background-color: $color_wt
+  padding: 100px
+  padding-top: 75px
+  & .guide
+    width: 15%
+    filter: invert(0.8)
+    margin-left: 2px
+  & h1
+    font-size: $font_size*40
+    letter-spacing: $font_size*2
+  & h1.eng
+    font-size: $font_size*24
+    margin-top: $font_size*-20
+    margin-bottom: $font_size*40
+  & h2
+    font-size: $font_size*30
+    letter-spacing: $font_size*1.5
+  & h2.eng
+    font-size: $font_size*18
+    margin-top: $font_size*-18
+    margin-bottom: $font_size*36
+  & h3
+    font-size: $font_size*20
+    letter-spacing: $font_size*1.2
+  & h3.eng
+    font-size: $font_size*12
+    margin-top: $font_size*-16
+  & .eng
+    font-weight: 500
+    letter-spacing: $font_size*0.9
+
+  & p 
+    font-weight: 700
+    letter-spacing: $font_size*-0.1
+    margin-top: $font_size*28
+    margin-bottom: $font_size*14
+
+  & .color_chip,.button
+    display: inline-block
+  & .color_tag,.color_block
+    display: inline-block
+    vertical-align: middle
+  
+  & .color_chip
+    margin-right: 30px
+    & .color_block
+        +size(18px,18px)
+        border-radius: $font_size*4
+        border: solid 2px
+        margin-left: 5px
+    & .color_block.color_block_yl
+        background-color: $color_yl
+    & .color_block.color_block_bk
+        background-color: $color_bk
+    & .color_block.color_block_wt
+        background-color: $color_wt
+
+  & .button
+      border: solid 2px $color_bk
+      font-weight: bold
+      border-radius: $font_size*16
+      margin-right: 20px
+      padding: $font_size*5 $font_size*25
+      letter-spacing: $font_size*1.5
+
+  & .button.button_yl
+      background-color: $color_yl
+  & .button.button_bk
+      background-color: $color_bk
+      font-weight: 500
+      color: $color-wt
+  & .button.button_wt
+      background-color: $color_wt
+  
+.content_bk
+  background-color: $color_bk
+  color: $color_wt
+  & .guide
+    filter: invert(0)
+  & .button
+    color: $color_bk
+    border: solid 2px $color_wt
+.content_yl
+  background-color: $color_yl
+  color: $color_bk
+  & .guide
+    filter: invert(1)
+  
