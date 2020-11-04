@@ -1,0 +1,119 @@
+【html】
+<div class="rectangle"></div>
+<div class="upper-card"></div>
+<div class="name">Cynthia</div>
+<div class="description">A creative front-end software engineer and designer</div>
+<div class="profilo"></div>
+<div class="contact">
+🌼  Mobile: (+886)955-358-433<br>
+🍀 eMail: avg54362333@gmail.com<br>
+🌸 Line ID: avg54362333 <br>
+🥇 Skills: Front-end design, Front-end coding
+❤️ UI, UX, Psychology
+</div>
+<div class="circle1"></div>
+<div class="circle2"></div>
+  
+【CSS】
+*{
+  background-color: #eee;
+  
+}
+
+.rectangle{
+  width: 300px;
+  height: 420px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: solid 2px #E0E0E0;
+  position: relative;
+  
+}
+
+.upper-card{
+  width: 300px;
+  height: 180px;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -430px;
+  border: solid 2px #E0E0E0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT56SztpsQALGtpA3K1jfPMllwnX6HqVzPThQ&usqp=CAU');
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+.profilo{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  left: 290px;
+  top: 180px;
+  position: absolute;
+  border: 3px solid #eee;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWf6SlR-lcvTymkhSaZqETMEasZ3ZBTRSLfQ&usqp=CAU');
+  background-position: center;
+  background-size: contain;
+  -moz-transform:scaleX(-1);
+  -webkit-transform:scaleX(-1);
+  -o-transform:scaleX(-1);
+  transform:scaleX(-1);
+}
+.name{
+  position: absolute;
+  margin-left:400px;
+  top: 240px;
+  background-color: #fff;
+  width:100px;
+  height: 100px;
+  font-family: 微軟正黑體;
+  font-weight: 900;
+}
+.description{
+  position: absolute;
+  margin-left:400px;
+  top: 270px;
+  background-color: #fff;
+  width:150px;
+  height: 100px;
+  font-family: 微軟正黑體;
+  font-weight: 300;
+  font-size: 11px;
+  padding:0px;
+  font-style:italic;
+}
+.contact{
+  position: absolute;
+  margin-left:330px;
+  top: 305px;
+  line-height:1.8;
+  background-color: #fff;
+  width:230px;
+  height: 100px;
+  font-family: 微軟正黑體;
+  font-weight: 300;
+  font-size: 11px;
+  padding:0px;
+}
+.circle1{
+  width:60px;
+  height:60px;
+  background-color: #BBFFBB;
+  position: absolute;
+  top: 400px;
+  left: 510px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.circle2{
+  width:20px;
+  height:20px;
+  background-color: #7AFEC6;
+  position: absolute;
+  top: 440px;
+  left: 490px;
+  border-radius: 100px;
+  overflow: hidden;
+}
