@@ -1,0 +1,43 @@
+【html】
+<div class="block">
+  <div class="line1"></div>
+  <div class="line2"></div>
+</div>
+=============================
+【sass】
+*
+  background-color: #3C3C3C
+.block
+  background-color: #FFE153
+  width: 200px
+  height: 200px
+  position: relative
+  cursor: pointer
+  
+#{if(&, "&", "*")}:hover
+  #{if(&, "&", "*")} .block
+    background-color: #FF5809
+    transition-duration: 0.5s
+  #{if(&, "&", "*")} .line1
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+  #{if(&, "&", "*")} .line2
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg)
+
+#{if(&, "&", "*")} .line1, #{if(&, "&", "*")} .line2
+  width: 150px
+  height: 10px
+  border: solid 2px #fff
+  position: absolute
+  background-color: #fff
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  transition-duration: 0.7s
+
+
+#{if(&, "&", "*")}
+.line1
+  transform: translateX(-50%) translateY(-100%) 
+#{if(&, "&", "*")}
+.line2
+  transform: translateX(-50%) translateY(100%)
